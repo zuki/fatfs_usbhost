@@ -2,9 +2,15 @@
 
 STM32Cubeで作成したプロジェクトをMakefileでコマンドラインからmakeできるようにする。
 
-## STM32_USB_Host_LibraryとFatFsを使ってUSBメモリを操作する
+## プロジェクト: STM32_USB_Host_LibraryとFatFsを使ってUSBメモリを操作する
 
-`Controllerstech: Robotics Simpliefied`サイトの記事[STM32 USB HOST MSC](https://controllerstech.com/stm32-usb-host-msc/)を使用した。
+`Controllerstech: Robotics Simpliefied`サイトの記事[STM32 USB HOST MSC](https://controllerstech.com/stm32-usb-host-msc/)をそのまま使用した。ビデオも非常に参考になった。
+
+## STM32_USB_Host_LibraryとFatFsを使うための処理の内容
+
+STM32Cubeが作成したソースに上記サイトからダウンロードした３つのファイル`File_Handling.[ch]`と`usb_host.c`を追加または上書きした。変更があったファイルは`USB_HOST/App/usb_host.c`だけであり、
+この中の`USBH_UserProcess()`関数に行いたい処理が追加されていた。個々の処理は関数化され、
+`Core/Src/File_Handling.c`にまとめられていた。
 
 ## 実行結果
 
