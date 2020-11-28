@@ -1,4 +1,12 @@
-# 実行結果
+# Makefileファイルで動かすSTM32F4-Discovery
+
+STM32Cubeで作成したプロジェクトをMakefileでコマンドラインからmakeできるようにする。
+
+## STM32_USB_Host_LibraryとFatFsを使ってUSBメモリを操作する
+
+`Controllerstech: Robotics Simpliefied`サイトの記事[STM32 USB HOST MSC](https://controllerstech.com/stm32-usb-host-msc/)を使用した。
+
+## 実行結果
 
 ```
 USB mounted successfully...
